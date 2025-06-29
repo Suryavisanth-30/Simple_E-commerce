@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surya - Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-page" style="background-color: black;">
+  <div class="navbar">
+    <div class="logo">Surya</div>
+    <div class="search-cart">
+      <input type="text" placeholder="Search..." />
+      <button>🔍</button>
+      <button onclick="showCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </div>
+  </div>
+
+  <h2 class="title">Featured Products</h2>
+  <div class="product-container">
+    <div class="product">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.39HSt23BmJIkeuXmDKXC2QAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Black Jacket">
+      <h3>Beautiful Black Jacket</h3>
+      <p>₹1799</p>
+      <button onclick="addToCart('Black Jacket', 1799)">Add to cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.bewakoof.com/original/men-s-green-jacket-556286-1669120211-1.jpg" alt="Green Jacket">
+      <h3>Beautiful Green Jacket</h3>
+      <p>₹1599</p>
+      <button onclick="addToCart('Green Jacket', 1599)">Add to cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.bestsellerclothing.in/data/JJ/26-dec-2022/230321501_g4.jpg?width=1080&height=1355&mode=fill&fill=blur&format=auto" alt="Navy Jacket">
+      <h3>Beautiful Navy Blue Jacket</h3>
+      <p>₹2199</p>
+      <button onclick="addToCart('Navy Jacket', 2199)">Add to cart</button>
+    </div>
+    <div class="product">
+      <img src="https://i.pinimg.com/474x/6f/77/a2/6f77a28fb4526be91fcd90987e664647.jpg" alt="SleeveLess Jacket">
+      <h3>Beautiful SleeveLess Jacket</h3>
+      <p>₹1499</p>
+      <button onclick="addToCart('SleeveLess Jacket', 1499)">Add to cart</button>
+    </div>
+  </div>
+
+  <div class="cart-view" id="cart-view">
+    <h3>🛒 Your Cart</h3>
+    <ul id="cart-items"></ul>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
